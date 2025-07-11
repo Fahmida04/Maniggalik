@@ -21,7 +21,7 @@ class Queue {
     interval: NodeJS.Timeout | undefined;
     //The amount of messages to process at the same time
     private static readonly CONCURRENT_QUEUE_SIZE = 3;
-    private static readonly LLM_MODEL = "llama3.2:latest";
+    private static readonly LLM_MODEL = "ollama run tinyllama";
 
     constructor() {
         this.queue = {};
